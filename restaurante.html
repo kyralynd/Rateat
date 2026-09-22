@@ -3,31 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurante - Rateat</title>
 </head>
 
 <body>
+
 <header>
-<section>
-    <nav class="section">
-        <img src="logo.png">
-        <a href="/index.html">Home</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/restaurantes.html">Restaurantes</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/restaurante.html" >Restaurante</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/avaliar.html" >Avaliar</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/cadastro.html" >Cadastro</a>
+    <a href="inicio.html" class="logo">
+        <img src="logo.png" alt="Logo RateAt">
+        <span>Rateat</span>
+    </a>
+    <nav>
+        <a href="inicio.html">Início</a>
+        <a href="restaurantes.html" class="ativo">Restaurantes</a>
+        <a href="avaliar.html">Avaliar</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="login.html">Entrar</a>
     </nav>
-</section>
 </header>
-<hr>
-<br>
-<hr>
+
+<main>
+
+    <!-- TODO: quando ligar ao PHP, os dados abaixo vêm da tabela "restaurante"
+         filtrada pelo id passado na URL: restaurante.php?id=1 -->
+
+    <h1>Nome do Restaurante</h1>
+
+    <p><strong>Nota:</strong> 4,5 (2 avaliações)</p>
+    <p><strong>Categoria:</strong> Brasileira</p>
+    <p><strong>Preço:</strong> $$</p>
+    <p><strong>Endereço:</strong> Rua Principal, 10 - Centro</p>
+    <p><strong>Descrição:</strong> Melhor comida caseira da região.</p>
+
+    <br>
+
+    <!-- TODO: passar o id do restaurante no link: avaliar.html?restaurante=1 -->
+    <a href="avaliar.html" class="btn btn-primario">Avaliar este restaurante</a>
+
+    <br><br>
+
+    <h2>Avaliações</h2>
+
+    <!-- TODO: substituir os itens abaixo por um loop PHP que lê a tabela "avaliacao"
+         filtrada por nome_restaurante -->
+
+    <div class="avaliacao-item">
+        <div class="cabecalho">
+            <span class="usuario">Maria</span>
+            <!-- TODO: formatar a data com date("d/m/Y", strtotime($av["data"])) no PHP -->
+            <span class="data">10/09/2026</span>
+        </div>
+        <p>★★★★★</p>
+        <p class="comentario">Comida maravilhosa e ótimo atendimento!</p>
+    </div>
+
+    <div class="avaliacao-item">
+        <div class="cabecalho">
+            <span class="usuario">João</span>
+            <span class="data">08/09/2026</span>
+        </div>
+        <p>★★★★☆</p>
+        <p class="comentario">Muito bom, voltarei com certeza.</p>
+    </div>
+
+    <br>
+
+    <a href="restaurantes.html">← Voltar</a>
+
+</main>
+
 <footer>
-    <p>2026 - RATEAT</p>
+    <p>2026 - RateAt</p>
 </footer>
+
+</body>
 </html>

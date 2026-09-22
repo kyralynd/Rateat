@@ -3,69 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Avalie Aqui/style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Início - Rateat</title>
 </head>
 
 <body>
+
 <header>
-<section>
-    <nav class="section">
-        <img src="logo.png">
-        <a href="/index.html">Home</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/restaurantes.html">Restaurantes</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/restaurante.html" >Restaurante</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/avaliar.html" >Avaliar</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/cadastro.html" >Cadastro</a>
+    <a href="inicio.html" class="logo">
+        <img src="logo.png" alt="Logo RateAt">
+        <span>Rateat</span>
+    </a>
+    <nav>
+        <a href="inicio.html" class="ativo">Início</a>
+        <a href="restaurantes.html">Restaurantes</a>
+        <a href="avaliar.html">Avaliar</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="login.html">Entrar</a>
     </nav>
-</section>
 </header>
-<hr>
-<br>
 
-<section class="bannerhome">
-    <h1>RATEAT</h1>
-    <H2>Avaliando a verdadeira comida.</H2>
+<main>
+
+    <h1>Bem-vindo ao Rateat</h1>
+    <p>Encontre e avalie restaurantes da sua cidade.</p>
+
     <br>
-        <pre>
-        Onde cada detalhe sensorial é pesado com rigor: cozinha autoral, 
-        atendimento de precisão, harmonia enológica, acústica de salão e o justo 
-        equilíbrio de valor.
-        </pre>
-</section>
-<section>
-    <h2>Avaliações</h2>
-    <div class="avaliacoes">
-        <div class="avaliacao">
-            <h3>Restaurante A</h3>
-            <p>Avaliação: <strong>4.5/5</strong></p>
-            <a href="/restaurante.html">Ver restaurante</a>
-        </div>
-        <div class="avaliacao">
-            <h3>Restaurante B</h3>
-            <p>Avaliação: <strong>4.0/5</strong></p>
-            <a href="/restaurante.html">Ver restaurante</a> 
-        </div>
-        <div class="avaliacao">
-            <h3>Restaurante C</h3>
-            <p>Avaliação: <strong>4.8/5</strong></p>
-            <a href="/restaurante.html">Ver restaurante</a>
-        </div>
-    </div>
-</section>
-<section>
-    <p>Queremos ouvir sua opinião! Avalie um restaurante e ajude outros usuários a fazerem escolhas informadas.</p>
-    <a href="/avaliar.html" class="avaliar-button">Avaliar um restaurante</a>
-</section>
 
-<hr>
+    <h2>Restaurantes em destaque</h2>
+
+    <!-- TODO: quando ligar ao PHP, substituir os itens abaixo por um loop
+         que busca os restaurantes com maior nota do banco -->
+    <p><strong>Restaurante A</strong> - Nota: 4,5 - <a href="restaurante.html">Ver</a></p>
+    <p><strong>Restaurante B</strong> - Nota: 4,0 - <a href="restaurante.html">Ver</a></p>
+    <p><strong>Restaurante C</strong> - Nota: 4,8 - <a href="restaurante.html">Ver</a></p>
+
+    <br>
+
+    <a href="avaliar.html" class="btn btn-primario">Avaliar um restaurante</a>
+
+</main>
+
 <footer>
-    <p>2026 - RATEAT</p>
+    <p>2026 - Rateat</p>
 </footer>
-</body>
 
+</body>
 </html>

@@ -2,28 +2,55 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=H, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login - Rateat</title>
-    <link rel="stylesheet" href="/Avalie Aqui/style.css">
 </head>
+
 <body>
 
-    <div class="titulo"><h1>Login</h1></div> 
+<header>
+    <a href="inicio.html" class="logo">
+        <img src="logo.png" alt="Logo RateAt">
+        <span>Rateat</span>
+    </a>
+    <nav>
+        <a href="inicio.html">Início</a>
+        <a href="restaurantes.html">Restaurantes</a>
+        <a href="avaliar.html">Avaliar</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="login.html" class="ativo">Entrar</a>
+    </nav>
+</header>
 
-    <form action="salvarusuario.php" method="post">
-        <div class="campos input ">
-            <input type="text" placeholder="Digite o login" name="login" size="35"><br>
+<main>
 
-            <input type="password" placeholder="Digite a sua senha" name="senha" size="35"><br>
-        </div>
-        
-        <div class="botao button ">
-            <a href="inicio.html"> <button>Entrar </a> </button>
-            <button>Esqueci a senha</button>
-            <button type="submit">      Cadastrar-se</button>
-            <button type="reset">Limpar</button>
-        </div>
+    <h1>Entrar</h1>
+
+    <!-- TODO: quando ligar ao PHP, trocar action para o arquivo que verifica
+         usuário e senha no banco de dados -->
+    <form action="login.html" method="post">
+
+        <label for="login">Usuário ou e-mail</label><br>
+        <input type="text" id="login" name="login" required><br><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <button type="submit">Entrar</button>
+        <button type="reset">Limpar</button>
+
     </form>
+
+    <br>
+
+    <p>Não tem conta? <a href="cadastro.html">Cadastrar-se</a></p>
+
+</main>
+
+<footer>
+    <p>2026 - Rateat</p>
+</footer>
 
 </body>
 </html>

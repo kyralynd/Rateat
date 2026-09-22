@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Restaurantes</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurantes - Rateat</title>
 </head>
 
 <body>
-<header>
-<section>
-    <nav class="section">
-        <img src="logo.png">
-        <a href="/index.html">Home</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/restaurantes.html">Restaurantes</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/restaurante.html" >Restaurante</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/avaliar.html" >Avaliar</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/cadastro.html" >Cadastro</a>
-    </nav>
-</section>
-</header>
-<hr>
-<br>
 
-<hr>
+<header>
+    <a href="inicio.html" class="logo">
+        <img src="logo.png" alt="Logo RateAt">
+        <span>Rateat</span>
+    </a>
+    <nav>
+        <a href="inicio.html">Início</a>
+        <a href="restaurantes.html" class="ativo">Restaurantes</a>
+        <a href="avaliar.html">Avaliar</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="login.html">Entrar</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Restaurantes</h1>
+
+    <!-- TODO: quando ligar ao PHP, o action vai para restaurantes.php?busca=... -->
+    <form action="restaurantes.html" method="get">
+        <input type="text" name="busca" placeholder="Pesquisar restaurante...">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <br>
+
+    <!-- TODO: substituir os itens abaixo por um loop PHP que lê a tabela "restaurante" do banco -->
+    <p><strong>Restaurante A</strong> - Categoria - Nota: 4,5 - <a href="restaurante.html">Ver</a></p>
+    <p><strong>Restaurante B</strong> - Categoria - Nota: 4,0 - <a href="restaurante.html">Ver</a></p>
+    <p><strong>Restaurante C</strong> - Categoria - Nota: 4,8 - <a href="restaurante.html">Ver</a></p>
+
+</main>
+
 <footer>
-    <p>2026 - RATEAT</p>
+    <p>2026 - Rateat</p>
 </footer>
+
+</body>
+</html>
